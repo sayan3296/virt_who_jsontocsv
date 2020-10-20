@@ -17,5 +17,22 @@
     
 2. How to use ?
 
-    * Clone this repository.
+    * Clone this repository on Satellite or in the location where your virt-who data is present.
+        ~~~
+        # git clone https://github.com/sayan3296/virt_who_jsontocsv.git
+        # cd virt_who_jsontocsv/
+        ~~~
+        
+    * Enusre that the `virt-who-data.txt` file is present somewhere. It shoudl be provided by customer or you can use `virt-who -od &> virt-who-data.txt` to collect the same.
+    
+    * Process the file in this way.
+        ~~~
+        # ./raw_to_json.sh /path/to/virt-who-data.txt &> data.json
+        # ./json_to_csv.py -i data.json -o result.csv
+        ~~~
+        
+    * Either open the file with excel\spreadsheet type of software or read it using following command.
+        ~~~
+        # cat result.csv | column -s',' -t | less
+        ~~~
 
