@@ -23,7 +23,7 @@
         # cd virt_who_jsontocsv/
         ~~~
         
-    * Enusre that the `virt-who-data.txt` file is present somewhere. It shoudl be provided by customer or you can use `virt-who -od &> virt-who-data.txt` to collect the same.
+    * Enusre that the `virt-who-data.txt` file is present somewhere. It should be provided by customer or you can use `virt-who -od &> virt-who-data.txt` to collect the same.
     
     * Process the file in this way.
         ~~~
