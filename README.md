@@ -1,4 +1,4 @@
-# -> JSON to CSV parser for virt-who raw data
+# -> JSON to CSV parser for virt-who mapping data ( vCenter )
 
 **This is a small project that helps in parsing the raw json mapping collected by virt-who service into a human-readable csv format.**
 
